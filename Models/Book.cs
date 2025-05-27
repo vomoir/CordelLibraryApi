@@ -7,7 +7,7 @@ public class Book
     public required string Author { get; set; }
     public required string Publisher { get; set; }
     public required int NumberOfPages { get; set; }
-    public DateTime PublishedDate { get; set; }
+    public DateOnly PublishedDate { get; set; }
     public required string Blurb { get; set; }
     public required string CoverUrl { get; set; }
     }

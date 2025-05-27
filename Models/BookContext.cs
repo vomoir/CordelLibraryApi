@@ -19,7 +19,7 @@ public class BookContext : DbContext
             Author = "F. Scott Fitzgerald",
             Publisher = "Scribner",
             NumberOfPages = 180,
-            PublishedDate = new DateTime(1925, 4, 10),
+            PublishedDate = new DateOnly(1925, 4, 10),
             Blurb = "A novel about the American dream and the disillusionment of the Jazz Age.",
             CoverUrl = "https=//covers.openlibrary.org/b/id/22-M.jpg"
         });
@@ -30,7 +30,7 @@ public class BookContext : DbContext
             Author = "Harper Lee",
             Publisher = "J.B. Lippincott & Co.",
             NumberOfPages = 281,
-            PublishedDate = new DateTime(1960, 7, 11),
+            PublishedDate = new DateOnly(1960, 7, 11),
             Blurb = "A novel about the serious issues",
             CoverUrl = "https=//covers.openlibrary.org/b/id/24-M.jpg"
         });
@@ -41,7 +41,7 @@ public class BookContext : DbContext
             Author = "George Orwell",
             Publisher = "Secker & Warburg",
             NumberOfPages = 328,
-            PublishedDate = new DateTime(1949, 6, 8),
+            PublishedDate = new DateOnly(1949, 6, 8),
             Blurb = "A dystopian novel set in a totalitarian society ruled by Big Brother.",
             CoverUrl = "https=//covers.openlibrary.org/b/id/14-M.jpg"
         });
@@ -52,7 +52,7 @@ public class BookContext : DbContext
             Author = "Jane Austen",
             Publisher = "T. Egerton",
             NumberOfPages = 432,
-            PublishedDate = new DateTime(1813, 1, 28),
+            PublishedDate = new DateOnly(1813, 1, 28),
             Blurb = "A romantic novel that critiques the British landed gentry at the end of the 18th century.",
             CoverUrl = "https=//covers.openlibrary.org/b/id/1-M.jpg"
         });

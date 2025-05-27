@@ -13,8 +13,17 @@ builder.Services.AddDbContext<BookContext>(opt =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy => policy.WithOrigins("http://localhost:3000") // Allow frontend access
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials());
+});
 
 var app = builder.Build();
+app.UseCors("AllowLocalhost"); // Apply the policy
 SeedDatabase(app);
 
 
